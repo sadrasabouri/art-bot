@@ -18,7 +18,7 @@ To use it, just send your text to it.
 ### 0. Virtual Environment
 Save your token into `.env` file like:
 ```
-TELEGRAM_TOKEN='2025038828:AAHMH88MLDtLCbUKwVPPBbxoUp1cR3NZ7JA'
+TELEGRAM_TOKEN='[YOUR TOKEN]'
 ```
 and then run bellow commands:
 ```
