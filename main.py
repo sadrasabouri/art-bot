@@ -7,7 +7,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 import logging
 
 from params import *
-from functions import make_outputs_dir, art_start
+from functions import make_outputs_dir, art_start, command_handler
 
 
 if __name__ == "__main__":
@@ -18,6 +18,7 @@ if __name__ == "__main__":
     make_outputs_dir()
     updater = Updater(Token)
     updater.dispatcher.add_handler(CommandHandler("start", art_start))
+    updater.dispatcher.add_handler(CallbackQueryHandler(command_handler))
 
     updater.start_polling()
     updater.idle()
