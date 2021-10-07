@@ -9,10 +9,10 @@ id_list = []
 SourceChannelID = []
 AdminId = []
 StartText = """Welcome to art bot. Type your text to see its result."""
-HelpMessage = '''HelpMessage'''
-WarningMessage = '''WarningMessage'''
+HelpMessage = """Type your text to see its result."""
+WarningMessage = """You may input incorrectly. Try again!"""
 DonateText = '''DonateText'''
 
-KeyboardMenu = [[InlineKeyboardButton(text="Help", callback_data="Help")],
-                [InlineKeyboardButton(text="Webpage", url="http://www.shaghighi.ir/art/")],
-                [InlineKeyboardButton(text="Github", url="https://github.com/sepandhaghighi/art")]]
+KeyboardMenu = [[InlineKeyboardButton(text="help", callback_data="help")],
+                [InlineKeyboardButton(text="webpage", url="http://www.shaghighi.ir/art/")],
+                [InlineKeyboardButton(text="github", url="https://github.com/sepandhaghighi/art")]]
