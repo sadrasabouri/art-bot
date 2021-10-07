@@ -12,11 +12,22 @@
 Art bot is a free telegram bot for text converting to ASCII ART fancy.
 To use it, just send your text to it.
 
-@artlib_bot
-
-[http://www.t.me/artlib_bot](http://www.t.me/artlib_bot "ART BOT Link")
-
 
 ## Run
 
-### Installing Requirements
+### 0. Virtual Environment
+Save your token into `.env` file like:
+```
+TELEGRAM_TOKEN="2025038828:AAHMH88MLDtLCbUKwVPPBbxoUp1cR3NZ7JA"
+```
+and then run bellow command:
+```
+source .env
+```
+
+### 1. Installing Requirements
+Run bellow command:
+```
+pip3 install -r requirements.txt
+```
+
