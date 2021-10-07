@@ -3,7 +3,7 @@ import os
 
 def make_outputs_dir():
     """
-    Make outputs/ directory in current directory.
+    Make 'outputs/' directory in current directory.
 
     :return: None
     """
