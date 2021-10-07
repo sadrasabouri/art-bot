@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 import os
+import datetime
+import json
+import random
 from telegram import InlineKeyboardMarkup
+
+import art
 
 from params import KeyboardMenu, StartText, HelpMessage, WarningMessage
 
@@ -42,3 +47,18 @@ def command_handler(update, context):
         context.bot.send_message(user_id, HelpMessage)
     else:
         context.bot.send_message(user_id, WarningMessage)
+
+def text_gen(update, context):
+    """
+    Generate ASCII art.
+
+    :param update: telegram update object
+    :type update: telegram.update
+    :param context: telegram context object
+    :type context: CallbackContext
+    :return: None
+    """
+    chat_id = str(update.message.from_user.id)
+    font = random.choice(art.FONT_NAMES)
+    art_out = art.text2art(update.message.text, font=font)
+    context.bot.send_message(chat_id, art_out)
