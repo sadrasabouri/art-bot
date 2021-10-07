@@ -32,3 +32,8 @@ Run bellow command:
 pip3 install -r requirements.txt
 ```
 
+### 2. Run The Main
+In order to start the bot:
+```
+python main.py
+```
