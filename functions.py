@@ -59,6 +59,6 @@ def text_gen(update, context):
     :return: None
     """
     chat_id = str(update.message.from_user.id)
-    font = random.choice(art.FONT_NAMES)
+    font = random.choice(art.NON_ASCII_FONTS)
     art_out = art.text2art(update.message.text, font=font)
     context.bot.send_message(chat_id, art_out)
